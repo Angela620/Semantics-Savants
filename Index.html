@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIET Mentorship Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SLIET Mentorship Platform</h1>
+        <p>Connect with our faculty mentors for guidance.</p>
+    </header>
+
+    <main>
+        <section id="faculty-profiles">
+            <h2>Faculty Mentors</h2>
+            <div class="profile" id="mentor1">
+                <h3>Dr. Birmohan Singh</h3>
+                <p>Expert in Software Engineering and Operating System</p>
+                <button onclick="toggleAvailability('mentor1')">Check Availability</button>
+                <div class="availability" id="availability-mentor1">
+                    <p>Available Slots: 10 AM - 12 PM</p>
+                    <button onclick="bookSlot('mentor1', '10 AM')">Book 10 AM</button>
+                    <button onclick="bookSlot('mentor1', '11 AM')">Book 11 AM</button>
+                </div>
+            </div>
+                <div class="profile" id="mentor2">
+                <h3>Dr. Damanpreet Singh</h3>
+                <p>Expert in Computer Science & Engineering</p>
+                <button onclick="toggleAvailability('mentor1')">Check Availability</button>
+                <div class="availability" id="availability-mentor1">
+                    <p>Available Slots: 10 AM - 12 PM</p>
+                    <button onclick="bookSlot('mentor1', '10 AM')">Book 10 AM</button>
+                    <button onclick="bookSlot('mentor1', '11 AM')">Book 11 AM</button>
+                </div>
+            </div>
+            <div class="profile" id="mentor3">
+                <h3>Dr. Major Singh Goraya</h3>
+                <p>Expert in Computer Science and Engineering</p>
+                <button onclick="toggleAvailability('mentor1')">Check Availability</button>
+                <div class="availability" id="availability-mentor1">
+                    <p>Available Slots: 10 AM - 12 PM</p>
+                    <button onclick="bookSlot('mentor1', '10 AM')">Book 10 AM</button>
+                    <button onclick="bookSlot('mentor1', '11 AM')">Book 11 AM</button>
+                </div>
+            </div>
+            <div class="profile" id="mentor4">
+                <h3>Dr. Manoj Sachan</h3>
+                <p>Expert in Computer Science & Engineering</p>
+                <button onclick="toggleAvailability('mentor1')">Check Availability</button>
+                <div class="availability" id="availability-mentor1">
+                    <p>Available Slots: 10 AM - 12 PM</p>
+                    <button onclick="bookSlot('mentor1', '10 AM')">Book 10 AM</button>
+                    <button onclick="bookSlot('mentor1', '11 AM')">Book 11 AM</button>
+                </div>
+            </div>
+            <section id="dashboard">
+                <h2>Your Mentorship Sessions</h2>
+                <ul id="sessionList">
+                    <li>No upcoming sessions.</li>
+                </ul>
+            </section>
+            
+        </section>
+        
+        <section id="chat">
+            <h2>Chat with Mentor</h2>
+            <textarea id="chatInput" placeholder="Type your message..."></textarea>
+            <button onclick="sendMessage()">Send</button>
+            <div id="chatOutput"></div>
+        </section>
+    </main>
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Session Feedback</h2>
+            <textarea id="feedbackText" placeholder="Provide your feedback..."></textarea>
+            <button onclick="submitFeedback()">Submit Feedback</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SLIET Mentorship Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
